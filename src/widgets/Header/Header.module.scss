@@ -1,3 +1,23 @@
+@import "../../app/theme/theme";
+
 .header {
-    
+    background-color: $red;
+
+    &__inner {
+        height: 96px;
+        max-width: 1341px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo {
+        width: 75px;
+        cursor: pointer;
+    }
+    &__list {
+        display: flex;
+        column-gap: 17px;
+        align-items: center;
+    }
 }
