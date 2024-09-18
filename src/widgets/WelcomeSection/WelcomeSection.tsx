@@ -6,25 +6,26 @@ import Image from "next/image";
 const WelcomeSection = () => {
     return (
         <section className={styles.welcome}>
-            <div className={styles.welcome__background}>
+        {/* 
+           */}
+           <div className={styles.welcome__background}> 
             <div className={styles.welcome__inner}>
                 <div className={styles.welcome__preview}>
-
                 <h1 className={styles.welcome__title}>
                 Добро пожаловать 
                 на мангалиб
                 </h1>
+            {/*
                 <ResearchBtn text="Исследовать" link={"/sign-in"} />
+                */}
                 </div>
                 <SliderCarouselHeader />
             </div>
             </div>
-            {/*
-            <Image src={Zero} alt="Zero one" className={styles.welcome__zero} />
-            <div className={styles.welcome__background} >
-            <Image src={Zero} alt="Zero one" className={styles.welcome__zero} />
-            </div>
-            */}
+            <div className={styles.welcome__triangle} />
+
+           
+         
         </section>
     );
 }

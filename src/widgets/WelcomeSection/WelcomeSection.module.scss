@@ -39,7 +39,7 @@
     }
 
     &__background {
-min-height: 708px;
+//min-height: 708px;
         background-color: $red;
         /*
         width: 150vw;
@@ -50,5 +50,29 @@ min-height: 708px;
         top: 0;
         z-index: 0;
         */
+    }
+
+    &__triangle {
+       /* width: 0;
+        height: 0;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        border-bottom: 100px solid #007BFF; 
+      */
+
+
+      top: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-top: 254px solid $red;
+      border-left: 100vw solid transparent; 
+      &::before {
+        content: url("../../shared/assets/zero.svg");
+        position: absolute;
+        right: 0;
+        top: 0;
+       transform: rotate(-3deg) translateX(120px) translateY(20px);
+      }
     }
 }

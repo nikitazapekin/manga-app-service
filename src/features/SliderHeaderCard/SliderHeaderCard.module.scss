@@ -1,0 +1,10 @@
+@import "../../app/theme/theme";
+
+.card {
+    &__title {
+        color: $white;
+        font-weight: 400;
+        font-size: 32px;
+        color: #fff;
+    }
+}

@@ -1,11 +1,14 @@
 .slider {
     position: relative;
+min-height: 300px;
     &__inner {
         position: absolute;
         display: flex;
     }
+
     &__item {
         display: flex;
+        column-gap: 35px;
 
     }
 }

@@ -1,0 +1,13 @@
+@import "../../../app/theme/theme";
+.btn {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 3px solid $pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 111;
+}
