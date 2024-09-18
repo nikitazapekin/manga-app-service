@@ -1,7 +1,52 @@
-.search{
+@import "../../app/theme/theme";
+
+.search {
+
+    display: grid;
+    grid-template-columns: minmax(200px, 571px);
+
+    position: relative;
+
     &__icon {
 
         width: 14px;
         height: 27px;
+    }
+
+    &__input {
+        cursor: pointer;
+        background-color: $red;
+        padding: 6px 10px 6px 24px;
+        font-family: "Nunito", sans-serif;
+        border: none;
+        outline: none;
+        font-weight: 700;
+        font-size: 24px;
+        color: $white;
+        border-radius: 35px;
+    }
+
+    &__input::placeholder {
+        font-weight: 700;
+        font-size: 24px;
+        color: $white;
+    }
+
+    &__btn {
+        position: absolute;
+        background-color: $darken-red;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        border-radius: 50%;
+        width: 37px;
+        height: 37px;
+        display: flex;
+        align-items: center;
+        margin-right: 4px;
+        justify-content: center;
+    }
+    &__icon {
+        transform: rotate(45deg);
     }
 }

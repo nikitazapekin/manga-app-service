@@ -1,11 +1,13 @@
 @import "../../app/theme/theme";
 
 .header {
-    background-color: $red;
+    background-color: $darken-red;
+    z-index: 1;
 
     &__inner {
         height: 96px;
-        max-width: 1341px;
+        max-width: 1379px;
+        padding: 0 18px;
         margin: 0 auto;
         display: flex;
         align-items: center;

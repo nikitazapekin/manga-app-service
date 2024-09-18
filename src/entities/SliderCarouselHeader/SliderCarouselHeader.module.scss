@@ -1,0 +1,11 @@
+.slider {
+    position: relative;
+    &__inner {
+        position: absolute;
+        display: flex;
+    }
+    &__item {
+        display: flex;
+
+    }
+}

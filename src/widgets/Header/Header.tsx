@@ -3,6 +3,7 @@ import styles from "./Header.module.scss"
 import Logo from "../../shared/assets/logo.svg"
 import HeaderBtn from "@/shared/ui/HeaderBtn/HeaderBtn";
 import HeaderInput from "@/features/HeaderInput/HeaderInput";
+import ThemeBtn from "@/shared/ui/ThemeBtn/ThemeBtn";
 const Header = () => {
     return (
         <header className={styles.header}>
@@ -19,7 +20,10 @@ const Header = () => {
                             <HeaderBtn text={"Каталог"} link={"/catalog"} />
                         </li>
                         <li>
-                          <HeaderInput />
+                            <HeaderInput />
+                        </li>
+                        <li>
+                            <ThemeBtn />
                         </li>
                         <li>
                             <HeaderBtn text={"Вход"} link={"/sign-in"} />

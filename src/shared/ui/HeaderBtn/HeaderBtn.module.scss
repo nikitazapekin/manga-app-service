@@ -1,7 +1,7 @@
 @import "../../../app/theme/theme";
 
 .btn {
-    background-color: $darken-red;
+    background-color: $red;
     padding: 6px 22px;
     cursor: pointer;
     color: $white;
@@ -13,6 +13,8 @@
     justify-content: center;
     border-radius: 35px;
     transition: 0.4s ease-in-out;
+    border: none;
+    outline: none;
     &:hover {
         background-color: $btn-active;
     }
