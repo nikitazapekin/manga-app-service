@@ -3,7 +3,7 @@ import styles from "./Header.module.scss"
 import Logo from "../../shared/assets/logo.svg"
 import HeaderBtn from "@/shared/ui/HeaderBtn/HeaderBtn";
 import HeaderInput from "@/features/HeaderInput/HeaderInput";
-import ThemeBtn from "@/shared/ui/ThemeBtn/ThemeBtn";
+import ThemeBtn from "@/features/ThemeBtn/ThemeBtn";
 const Header = () => {
     return (
         <header className={styles.header}>
