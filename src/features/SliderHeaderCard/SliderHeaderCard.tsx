@@ -1,5 +1,4 @@
 import Image, { StaticImageData } from "next/image";
-import Element from "../../shared/assets/element.png"
 import styles from "./SliderHeaderCard.module.scss"
 interface SliderHeaderCardProps {
     title: string,

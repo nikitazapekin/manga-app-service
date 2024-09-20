@@ -6,10 +6,10 @@ interface SliderSwitchBtnProps {
     scale: number
 }
 const SliderSwitchBtn = ({ icon, scale }: SliderSwitchBtnProps) => {
-    return (<div className={styles.btn}>
-        {/*
+    return (<div style={{scale: `scale(${scale})`}} className={styles.btn}> 
         <Image src={icon} alt="icon" />
-        */}
+       
     </div>);
 }
 export default SliderSwitchBtn;
+

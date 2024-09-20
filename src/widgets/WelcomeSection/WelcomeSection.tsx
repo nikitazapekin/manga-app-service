@@ -1,13 +1,39 @@
+/*
 import SliderCarouselHeader from "@/entities/SliderCarouselHeader/SliderCarouselHeader";
 import styles from "./WelcomeSection.module.scss"
-import Zero from "@/shared/assets/zero.svg"
+//import Zero from "@/shared/assets/zero.svg"
 import ResearchBtn from "@/shared/ui/ResearchBtn/ResearchBtn";
-import Image from "next/image";
+//import Image from "next/image";
 const WelcomeSection = () => {
     return (
         <section className={styles.welcome}>
-        {/* 
-           */}
+            <div className={styles.welcome__inner}>
+                <div className={styles.welcome__preview}>
+                    <h1 className={styles.welcome__preview__title}>
+                    Добро пожаловать 
+                    на мангалиб
+                    </h1>
+                  
+                    <button className={styles.btn}>
+                        scasc
+                    </button>
+                </div>
+            </div>
+        </section>
+    );
+}
+
+export default WelcomeSection;
+*/
+import SliderCarouselHeader from "@/entities/SliderCarouselHeader/SliderCarouselHeader";
+import styles from "./WelcomeSection.module.scss"
+//import Zero from "@/shared/assets/zero.svg"
+import ResearchBtn from "@/shared/ui/ResearchBtn/ResearchBtn";
+//import Image from "next/image";
+const WelcomeSection = () => {
+    return (
+        <section className={styles.welcome}>
+      
            <div className={styles.welcome__background}> 
             <div className={styles.welcome__inner}>
                 <div className={styles.welcome__preview}>
@@ -15,11 +41,16 @@ const WelcomeSection = () => {
                 Добро пожаловать 
                 на мангалиб
                 </h1>
-            {/*
-                <ResearchBtn text="Исследовать" link={"/sign-in"} />
-                */}
+                <button className={styles.btn}>
+                    Исследовать
+                    </button>
+           
                 </div>
+                <div className={styles.welcome__content}>
+
                 <SliderCarouselHeader />
+                </div>
+              
             </div>
             </div>
             <div className={styles.welcome__triangle} />
@@ -31,3 +62,5 @@ const WelcomeSection = () => {
 }
 
 export default WelcomeSection;
+/*
+*/

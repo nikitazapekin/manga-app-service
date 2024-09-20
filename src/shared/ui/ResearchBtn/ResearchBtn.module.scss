@@ -1,19 +1,16 @@
 @import "../../../app/theme/theme";
 
 .btn {
-    //  flex: 0 1 auto;
-    // display: flex;
-    // justify-content: center;
-    //  align-items: center;
     cursor: pointer;
-    background-color: $pink;
+  //  background-color: $pink;
     position: relative;
- 
+    background-color: red;
     padding: 20px 75px;
+    /*
     border-radius: 23px;
     font-weight: 700;
     font-size: 24px;
-    font-family: "Nunito", sans-serif;
+  //  font-family: "Nunito", sans-serif;
     color: #000;
-
+*/
 }
