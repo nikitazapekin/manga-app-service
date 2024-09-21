@@ -181,6 +181,7 @@
         grid-template-columns: minmax(60px, 174px);
         border-radius: 3px;
         justify-items: center;
+        cursor: pointer;
 
         &__discord {
             background-color: $purple;

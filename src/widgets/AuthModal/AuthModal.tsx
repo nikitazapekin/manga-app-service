@@ -5,9 +5,21 @@ import Image from "next/image"
 import Discord from "@/shared/assets/social-networks/discord.png"
 import Vk from "@/shared/assets/social-networks/vk.png"
 import Google from "@/shared/assets/social-networks/google.png"
-const AuthModal = () => {
+import { useSelector } from "react-redux"
+import { AuthModalSelector } from "./AuthModal.selector"
+
+interface AuthModalProps {
+    isOpen: boolean
+}
+const AuthModal = ( //{isOpen}: AuthModalProps
+
+) => {
+    const isOpen = useSelector(AuthModalSelector)
     return (
-        <div className={styles.modal}>
+        <>
+        {isOpen && (
+
+            <div className={styles.modal}>
             <form className={styles.modal__inner}>
                 <div className={styles.modal__content}>
                     <div className={styles.modal__header}>
@@ -92,6 +104,8 @@ const AuthModal = () => {
             </form>
             <div className={styles.modal__overlay} />
         </div>
+        )}
+        </>
     );
 }
 
