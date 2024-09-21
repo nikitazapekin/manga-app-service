@@ -49,10 +49,16 @@
         color: $white;
         font-family: "Nunito", sans-serif;
     }
+
+    &__group {
+     
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .card {
     width: 100%;
-    // background-color: red;
     user-select: none;
 }

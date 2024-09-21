@@ -4,7 +4,10 @@ import Logo from "../../shared/assets/logo.svg"
 import HeaderBtn from "@/shared/ui/HeaderBtn/HeaderBtn";
 import HeaderInput from "@/features/HeaderInput/HeaderInput";
 import ThemeBtn from "@/features/ThemeBtn/ThemeBtn";
-const Header = () => {
+interface HeaderProps {
+    handleOpenModal: () => void
+}
+const Header = ({ handleOpenModal }: HeaderProps) => {
     return (
         <header className={styles.header}>
             <div className={styles.header__inner}>
@@ -22,11 +25,17 @@ const Header = () => {
                         <li>
                             <HeaderInput />
                         </li>
+
                         <li>
                             <ThemeBtn />
                         </li>
                         <li>
-                            <HeaderBtn text={"Вход"} link={"/sign-in"} />
+                            <button
+                                onClick={handleOpenModal}
+                                className={styles.header__btn}
+                            >Вход</button>
+                        </li>
+                        <li>
                         </li>
                     </ul>
                 </nav>

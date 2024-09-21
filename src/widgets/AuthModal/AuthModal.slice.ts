@@ -1,16 +1,16 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-//import { AppStatee, UserDataArray, SearchTypes } from '../types';
 interface AuthModalSliceTypes {
     isOpen: boolean
 }
 const initialState: AuthModalSliceTypes = {
-    isOpen: true
+    isOpen: false
 };
 const AuthModalSlice = createSlice({
     name: 'app',
     initialState,
     reducers: {
         setIsOpen(state) {
+            console.log("opp")
             state.isOpen = !state.isOpen
         },
 

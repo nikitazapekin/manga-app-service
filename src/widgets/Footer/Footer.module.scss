@@ -1,0 +1,28 @@
+@import "../../app/theme/theme";
+
+.footer {
+    margin-top: 22px;
+    background-color: $darken-red;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 37px 0;
+
+    }
+
+    &__text {
+        font-family: "Nunito", sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        color: $white;
+        &__underline {
+            font-family: "Nunito", sans-serif;
+            font-weight: 400;
+            font-size: 24px;
+            color: $white;
+            text-decoration: underline;
+        }
+    }
+}

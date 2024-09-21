@@ -6,27 +6,31 @@ import styles from "../app/theme/wrappers.module.scss"
 import WelcomeSection from "@/widgets/WelcomeSection/WelcomeSection";
 import MainPageSliderSection from "@/widgets/MainPageSliderSection/MainPageSliderSection";
 import AuthModal from "@/widgets/AuthModal/AuthModal";
-import { useState } from "react";
- 
+import { setIsOpen } from "@/widgets/AuthModal/AuthModal.slice";
+import { useDispatch } from "react-redux";
+import WelcomeFindSection from "@/widgets/WelcomeFindSection/WelcomeFindSection";
+import Footer from "@/widgets/Footer/Footer";
 export default function Home() {
- 
- const [isOpen, setIsOpen] = useState(true)
+  const dispatch = useDispatch()
+  const handleOpenModal = () => {
+    dispatch(setIsOpen())
+    console.log("open")
+  }
   return (
     <>
       <div className={styles.wrapper}>
- 
-        <Header />
+        <Header handleOpenModal={handleOpenModal} />
         <div className={styles.content}>
           <WelcomeSection />
           <MainPageSliderSection title={"Специально для тебя"} />
-
- 
-            <AuthModal // isOpen={isOpen} 
-            />
+          <WelcomeFindSection />
+          <AuthModal
+            handleOpenModal={handleOpenModal}
+          />
 
 
         </div>
-        wffw
+        <Footer />
       </div>
     </>
   );

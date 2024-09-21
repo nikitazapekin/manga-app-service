@@ -2,13 +2,13 @@
 
 .header {
     background-color: $darken-red;
-    z-index: 1;
-    position: relative;
-
-    &__inner {
-        height: 96px;
-        max-width: 1379px;
-        padding: 0 18px;
+   // z-index: 1;
+   // position: relative;
+    
+   &__inner {
+       height: 96px;
+       max-width: 1379px;
+       padding: 0 18px;
         margin: 0 auto;
         display: flex;
         align-items: center;
@@ -23,4 +23,26 @@
         column-gap: 17px;
         align-items: center;
     }
+    &__btn {
+        background-color: $red;
+        padding: 6px 22px;
+        cursor: pointer;
+        color: $white;
+        font-family: "Nunito", sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 35px;
+        transition: 0.4s ease-in-out;
+        border: none;
+        outline: none;
+        &:hover {
+            background-color: $btn-active;
+        }
+    }
 }
+
+
+ 

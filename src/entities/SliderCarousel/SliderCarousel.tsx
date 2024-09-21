@@ -11,7 +11,7 @@ const ScrollSlider: React.FC<ScrollSliderProps> = ({ children }) => {
   const [startPos, setStartPos] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
 
-  // Начало перетаскивания
+ 
   const handleMouseDown = (e: React.MouseEvent) => {
     if (!sliderRef.current) return;
     setIsDragging(true);
@@ -19,7 +19,7 @@ const ScrollSlider: React.FC<ScrollSliderProps> = ({ children }) => {
     setScrollLeft(sliderRef.current.scrollLeft);
   };
 
-  // Перетаскивание
+   
   const handleMouseMove = (e: React.MouseEvent) => {
     if (!isDragging || !sliderRef.current) return;
     const x = e.pageX - sliderRef.current.offsetLeft;
@@ -27,7 +27,7 @@ const ScrollSlider: React.FC<ScrollSliderProps> = ({ children }) => {
     sliderRef.current.scrollLeft = scrollLeft - walk;
   };
 
-  // Завершение перетаскивания
+ 
   const handleMouseUp = () => {
     setIsDragging(false);
   };
