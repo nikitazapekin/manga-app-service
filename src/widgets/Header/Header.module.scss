@@ -3,6 +3,7 @@
 .header {
     background-color: $darken-red;
     z-index: 1;
+    position: relative;
 
     &__inner {
         height: 96px;
