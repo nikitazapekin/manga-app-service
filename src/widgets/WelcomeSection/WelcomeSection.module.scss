@@ -36,7 +36,6 @@
         font-family: "Nunito", sans-serif;
         max-width: 618px;
         margin-bottom: 34px;
-        //   margin-left: 61px;
     }
 
     &__preview {
@@ -73,11 +72,8 @@
         &::before {
             content: url("../../shared/assets/zero.png");
             position: absolute;
-          right: 0;
-        //  left: 0;  
-       //   top: 0;
-       bottom: 0;
-//transform: rotate(-3deg) translateX(120px) translateY(20px);
+            right: 0;
+            bottom: 0;
         }
     }
 }
