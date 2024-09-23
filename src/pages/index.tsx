@@ -30,8 +30,9 @@ export default function Home() {
             handleOpenModal={handleOpenModal}
           />
 
-
+{/*
           <Swiper />
+          */}
 
         </div>
         <Footer />

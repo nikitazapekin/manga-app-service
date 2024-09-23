@@ -3,6 +3,7 @@ import SliderCard from "@/shared/ui/SliderCard/SliderCard";
 import styles from "./MainPageSliderSection.module.scss";
 import ScrollSlider from "@/entities/SliderCarousel/SliderCarousel";
 import Element from "@/shared/assets/element.png";
+import Swiper from '@/entities/Swiper/Swiper';
 
 interface MainPageSliderSectionProps {
   title: string;
@@ -32,7 +33,7 @@ const chunkArray = (array: typeof elems, chunkSize: number) => {
 };
 
 const MainPageSliderSection: React.FC<MainPageSliderSectionProps> = ({ title }) => {
-  const groupedElems = chunkArray(elems, 4); // Разбиваем на группы по 4 карточки
+
 
   return (
     <section className={styles.preview}>
@@ -42,17 +43,9 @@ const MainPageSliderSection: React.FC<MainPageSliderSectionProps> = ({ title }) 
           <h2 className={styles.preview__title}>
             {title}
           </h2>
-
-          <ScrollSlider>
-            {groupedElems.map((group, groupIndex) => (
-              <div key={groupIndex} className={styles.preview__group}>
-                {group.map((item, itemIndex) => (
-                  <SliderCard key={itemIndex} title={item.title} image={item.image} />
-                ))}
-              </div>
-            ))}
-          </ScrollSlider>
+ 
         </div>
+          <Swiper items={elems}/>
       </div>
       <div className={styles.preview__triangle__bottom} />
     </section>
