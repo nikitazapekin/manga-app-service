@@ -10,12 +10,14 @@ import { setIsOpen } from "@/widgets/AuthModal/AuthModal.slice";
 import { useDispatch } from "react-redux";
 import WelcomeFindSection from "@/widgets/WelcomeFindSection/WelcomeFindSection";
 import Footer from "@/widgets/Footer/Footer";
+import Swiper from "@/entities/Swiper/Swiper"
 export default function Home() {
   const dispatch = useDispatch()
   const handleOpenModal = () => {
     dispatch(setIsOpen())
     console.log("open")
   }
+
   return (
     <>
       <div className={styles.wrapper}>
@@ -28,6 +30,8 @@ export default function Home() {
             handleOpenModal={handleOpenModal}
           />
 
+
+          <Swiper />
 
         </div>
         <Footer />
