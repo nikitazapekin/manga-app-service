@@ -16,7 +16,6 @@ const Header = ({ handleOpenModal }: HeaderProps) => {
                     alt="logo"
                     className={styles.header__logo}
                 />
-
                 <nav className={styles.header__navigation}>
                     <ul className={styles.header__list}>
                         <li>
@@ -35,9 +34,47 @@ const Header = ({ handleOpenModal }: HeaderProps) => {
                                 className={styles.header__btn}
                             >Вход</button>
                         </li>
-                        <li>
-                        </li>
+
                     </ul>
+
+
+
+                </nav>
+            </div>
+
+
+            <div className={styles.header__inner__mobile}>
+                <nav className={styles.header__navigation}>
+                    <ul className={styles.header__list__mobile}>
+                        <li className={styles.header__mobile}>
+                            <Image
+                                src={Logo}
+                                alt="logo"
+                                className={styles.header__logo__mobile}
+                            />
+
+                            <div className={styles.header__mobile__content}>
+
+                                <ThemeBtn />
+                                <button
+                                    onClick={handleOpenModal}
+                                    className={styles.header__btn}
+                                >
+                                    Вход</button>
+                            </div>
+                        </li>
+
+                        <li className={styles.header__mobile__navigation}>
+                            <HeaderBtn text={"Каталог"} link={"/catalog"} />
+                            <HeaderInput />
+                        </li>
+
+
+
+                    </ul>
+
+
+
                 </nav>
             </div>
         </header>

@@ -24,12 +24,19 @@
         font-size: 24px;
         color: $white;
         border-radius: 35px;
+
+        @include  mobiles {
+            font-size: 20px;
+          }
     }
 
     &__input::placeholder {
         font-weight: 700;
         font-size: 24px;
         color: $white;
+        @include  mobiles {
+            font-size: 20px;
+          }
     }
 
     &__btn {

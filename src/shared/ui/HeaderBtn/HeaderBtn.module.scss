@@ -15,6 +15,9 @@
     transition: 0.4s ease-in-out;
     border: none;
     outline: none;
+    @include  mobiles {
+        font-size: 20px;
+      }
     &:hover {
         background-color: $btn-active;
     }

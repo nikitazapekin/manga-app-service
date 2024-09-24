@@ -30,6 +30,16 @@
             height: 0;
             border-bottom: 69px solid $red;
             border-left: 100vw solid transparent;
+            &__reverse {
+               transform: scale(-1);
+
+              top: 0;
+              right: 0;
+              width: 0;
+              height: 0;
+              border-top: 69px solid $red;
+              border-left: 100vw solid transparent;
+            } 
         }
 
         &__bottom {
@@ -40,6 +50,18 @@
             border-bottom: 69px solid $red;
             border-left: 100vw solid transparent;
             transform: scale(-1);
+
+
+            &__reverse {
+             //   transform: scale(-1);
+ 
+               top: 0;
+               right: 0;
+               width: 0;
+               height: 0;
+               border-top: 69px solid $red;
+               border-left: 100vw solid transparent;
+             } 
         }
     }
 

@@ -2,27 +2,88 @@
 
 .header {
     background-color: $darken-red;
-   // z-index: 1;
-   // position: relative;
-    
-   &__inner {
-       height: 96px;
-       max-width: 1379px;
-       padding: 0 18px;
+
+    &__mobile {
+
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 20px;
+
+
+        &__content {
+            padding: 14px 0px;
+            display: flex;
+            column-gap: 36px;
+
+            @include smallMobiles {
+                column-gap: 10px;
+            }
+        }
+
+        &__navigation {
+            display: flex;
+            column-gap: 36px;
+            @include smallMobiles {
+                column-gap: 10px;
+            }
+            padding: 14px 20px;
+            background-color: $darken-red;
+        }
+
+    }
+
+    &__inner {
+        @include tablets {
+            display: none;
+        }
+
+        height: 96px;
+        max-width: 1379px;
+        padding: 0 18px;
         margin: 0 auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        &__mobile {
+            @include desctop {
+                display: none;
+            }
+
+            @include tablets {
+                display: flex;
+            }
+
+            background-color: $red;
+        }
     }
+
     &__logo {
         width: 75px;
         cursor: pointer;
+
+        &__mobile {
+
+            width: 64px;
+            height: 64px;
+
+        }
     }
+
     &__list {
         display: flex;
         column-gap: 17px;
         align-items: center;
+
+        &__mobile {
+            display: flex;
+            flex-direction: column;
+
+        }
     }
+
     &__btn {
         background-color: $red;
         padding: 6px 22px;
@@ -38,11 +99,13 @@
         transition: 0.4s ease-in-out;
         border: none;
         outline: none;
+
+        @include mobiles {
+            font-size: 20px;
+        }
+
         &:hover {
             background-color: $btn-active;
         }
     }
 }
-
-
- 

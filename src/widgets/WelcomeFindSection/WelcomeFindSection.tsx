@@ -6,8 +6,7 @@ const WelcomeFindSection = () => {
 
         <section className={styles.find}>
             <div className={styles.find__triangle__top} />
-            {/*
-            */}
+          
             <div className={styles.find__content}>
 
                 <Image src={Zero} alt="Zero one"

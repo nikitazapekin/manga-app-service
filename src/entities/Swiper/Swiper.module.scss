@@ -1,13 +1,11 @@
 .swiperRootContainer {
     width: 100%;
-    //  width: 900px;
-  //  min-height: 481px;
-    // border: 1px solid gray;
+    margin: 41px 0 69px 0;
     overflow-x: hidden;
     border-radius: 10px;
     display: flex;
- 
- 
+
+
     &::-webkit-scrollbar {
         display: none;
     }
@@ -17,6 +15,7 @@
     //  background-color: red;
     display: flex;
     padding: 0 10px;
+    column-gap: 96px;
     //   height: 96%;
     width: max-content;
 }
@@ -24,7 +23,7 @@
 .swiperItem {
 
     cursor: pointer;
-    margin: 10px;
+    //  margin: 10px;
     border-radius: 10px;
     display: flex;
     align-items: center;
