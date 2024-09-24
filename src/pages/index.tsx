@@ -22,7 +22,7 @@ export default function Home() {
       <div className={styles.wrapper}>
         <Header handleOpenModal={handleOpenModal} />
         <div className={styles.content}>
-      {/*    <WelcomeSection />
+        <WelcomeSection />
           <MainPageSliderSection title={"Специально для тебя"}  scale={1} />
           <MainPageSliderSection title={"Наши новинки"}  scale={-1} />
 
@@ -30,8 +30,9 @@ export default function Home() {
           <WelcomeFindSection />
           <AuthModal
             handleOpenModal={handleOpenModal}
-          /> 
+            /> 
 
+            {/*  
           */}
         </div>
         <Footer />

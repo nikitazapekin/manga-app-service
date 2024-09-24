@@ -4,12 +4,15 @@ import Logo from "../../shared/assets/logo.svg"
 import HeaderBtn from "@/shared/ui/HeaderBtn/HeaderBtn";
 import HeaderInput from "@/features/HeaderInput/HeaderInput";
 import ThemeBtn from "@/features/ThemeBtn/ThemeBtn";
+import { useSelector } from "react-redux";
+import { isDarkTheme } from "@/features/ThemeBtn/ThemeBtn.selector";
 interface HeaderProps {
     handleOpenModal: () => void
 }
 const Header = ({ handleOpenModal }: HeaderProps) => {
+    const isDark = useSelector(isDarkTheme)
     return (
-        <header className={styles.header}>
+        <header className={`${styles.header} ${isDark ? styles.header__dark : ""}`}>
             <div className={styles.header__inner}>
                 <Image
                     src={Logo}
@@ -31,7 +34,7 @@ const Header = ({ handleOpenModal }: HeaderProps) => {
                         <li>
                             <button
                                 onClick={handleOpenModal}
-                                className={styles.header__btn}
+                                className={`${styles.header__btn} ${isDark ? styles.header__btn__dark : ""}`}
                             >Вход</button>
                         </li>
 

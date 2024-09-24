@@ -1,27 +1,23 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-interface AppState {
-  value: number;
+interface ThemeState {
+isDark: boolean
 }
-const initialState: AppState = {
-  value: 0,
+const initialState: ThemeState = {
+ isDark: false
 };
 const ThemeSlice = createSlice({
   name: 'theme',
   initialState,
   reducers: {
-    increment: (state) => {
-      state.value += 1;
-    },
-    decrement: (state) => {
-      state.value -= 1;
-    },
-    incrementByAmount: (state, action: PayloadAction<number>) => {
-      state.value += action.payload;
-    },
+
+    switchTheme: (state) => {
+      state.isDark = !state.isDark
+    }
+    
   },
 });
 
-export const { increment, decrement, incrementByAmount } = ThemeSlice.actions;
+export const {switchTheme } = ThemeSlice.actions;
 
 export default ThemeSlice.reducer;

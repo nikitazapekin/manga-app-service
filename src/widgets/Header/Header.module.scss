@@ -2,6 +2,11 @@
 
 .header {
     background-color: $darken-red;
+    transition: 0.4s ease-in-out;
+
+    &__dark {
+        background-color: $dark-theme-black;
+    }
 
     &__mobile {
 
@@ -25,9 +30,11 @@
         &__navigation {
             display: flex;
             column-gap: 36px;
+
             @include smallMobiles {
                 column-gap: 10px;
             }
+
             padding: 14px 20px;
             background-color: $darken-red;
         }
@@ -106,6 +113,11 @@
 
         &:hover {
             background-color: $btn-active;
+        }
+
+        transition: 0.4s ease-in-out;
+        &__dark {
+            background-color: $dark-theme-gray;
         }
     }
 }

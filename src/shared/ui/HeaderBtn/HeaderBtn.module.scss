@@ -15,10 +15,16 @@
     transition: 0.4s ease-in-out;
     border: none;
     outline: none;
+    transition: 0.4s ease-in-out;
     @include  mobiles {
         font-size: 20px;
       }
     &:hover {
         background-color: $btn-active;
+    }
+
+    &__dark {
+
+        background-color: $dark-theme-gray;
     }
 }
