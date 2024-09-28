@@ -10,6 +10,7 @@ import { setIsOpen } from "@/widgets/AuthModal/AuthModal.slice";
 import { useDispatch } from "react-redux";
 import WelcomeFindSection from "@/widgets/WelcomeFindSection/WelcomeFindSection";
 import Footer from "@/widgets/Footer/Footer";
+ 
 
 export default function Home() {
   const dispatch = useDispatch()
@@ -23,6 +24,9 @@ export default function Home() {
         <Header handleOpenModal={handleOpenModal} />
         <div className={styles.content}>
         <WelcomeSection />
+
+      
+            {/*  
           <MainPageSliderSection title={"Специально для тебя"}  scale={1} />
           <MainPageSliderSection title={"Наши новинки"}  scale={-1} />
 
@@ -32,7 +36,6 @@ export default function Home() {
             handleOpenModal={handleOpenModal}
             /> 
 
-            {/*  
           */}
         </div>
         <Footer />

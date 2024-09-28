@@ -29,7 +29,26 @@ import SliderCarouselHeader from "@/entities/SliderCarouselHeader/SliderCarousel
 import styles from "./WelcomeSection.module.scss"
 //import Zero from "@/shared/assets/zero.svg"
 import ResearchBtn from "@/shared/ui/ResearchBtn/ResearchBtn";
+import WelcomeSliderSwiper from "@/entities/WelcomeSliderSwiper/WelcomeSliderSwiper";
 //import Image from "next/image";
+import Element from "@/shared/assets/element.png"
+
+const elems = [
+    { title: "Test", image: Element },
+    { title: "Test", image: Element },
+    { title: "Test", image: Element },
+    { title: "Test", image: Element },
+    { title: "Test", image: Element },
+    { title: "Test", image: Element },
+    { title: "Test", image: Element },
+    { title: "Test", image: Element },
+    { title: "Test", image: Element },
+    { title: "Test", image: Element },
+    { title: "Test", image: Element },
+    { title: "Test", image: Element },
+  ];
+  
+  
 const WelcomeSection = () => {
     return (
         <section className={styles.welcome}>
@@ -47,8 +66,11 @@ const WelcomeSection = () => {
            
                 </div>
                 <div className={styles.welcome__content}>
+{/*}
+   <SliderCarouselHeader />
+   */}
 
-                <SliderCarouselHeader />
+   <WelcomeSliderSwiper items={elems} />
                 </div>
               
             </div>
