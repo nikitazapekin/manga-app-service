@@ -30,6 +30,27 @@ const WelcomeSection = () => {
         <section className={styles.welcome}>
             <div className={styles.welcome__inner}>
 
+                <h1 className={styles.welcome__title}>
+                    Добро пожаловать
+                    на мангалиб
+                </h1>
+                <button className={styles.btn}>
+                    Исследовать
+                </button>
+                <WelcomeSliderSwiper items={elems} />
+                <Image className={styles.welcome__zero} src={Zero} alt="Zero one" />
+            </div>
+        </section>
+    );
+}
+
+export default WelcomeSection;
+/*
+const WelcomeSection = () => {
+    return (
+        <section className={styles.welcome}>
+            <div className={styles.welcome__inner}>
+
                 <div className={styles.welcome__content}>
 
                     <h1 className={styles.welcome__title}>
@@ -56,46 +77,6 @@ const WelcomeSection = () => {
         </section>);
 }
 
-export default WelcomeSection;
-/*
+export default WelcomeSection; 
 
-const WelcomeSection = () => {
-return (
-    <section className={styles.welcome}>
-
-        <div className={styles.welcome__background}>
-
-            <div className={styles.welcome__entry}>
-
-                <div className={styles.welcome__inner}>
-                    <div className={styles.welcome__preview}>
-                        <h1 className={styles.welcome__title}>
-                            Добро пожаловать
-                            на мангалиб
-                        </h1>
-                        <button className={styles.btn}>
-                            Исследовать
-                        </button>
-
-                    </div>
-                    <div className={styles.welcome__content}>
-
-                        <WelcomeSliderSwiper items={elems} />
-                    </div>
-
-                </div>
-                <Image className={styles.welcome__zero} src={Zero} alt="Zero one" />
-            </div>
-        </div>
-        <div className={styles.welcome__triangle} >
-            dvs fewfew
-        </div>
-
-
-
-    </section>
-);
-}
-
-export default WelcomeSection;
 */

@@ -20,19 +20,36 @@
 }
 
 .welcome {
+    &__inner {
+        background-color: $red;
+        display: flex;
+        flex-direction: column;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 200px) );
+        padding-left: 62px;
+        row-gap: 40px;
+  /*    padding-left: 62px;
+      display: flex;
+      justify-content: space-between; */
+
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 64px;
+        color: $white;
+        font-family: "Nunito", sans-serif;
+        max-width: 618px;
+        margin-bottom: 34px;
+
+    }
+    &__zero {
+        align-self: flex-end;
+    }
+}
+/*
+.welcome {
     position: relative;
     width: 100%;
-   /* &::after {
-        content: url("../../shared/assets/zero.png");
-        position: absolute;
-        right: 0;
-        bottom: 0;
-      //  height: 400px;
-      transform: rotate(5deg);
-      width: 80%;
-     //   transform: rotate(5deg) translateY(-20px);
-   //  transform: translate(100%, 0%) rotate(5deg); // Смещаем по диагонали и вращаем
-    } */
+  
     &__inner {
         background-color: $red;
       padding-left: 62px;
@@ -63,20 +80,7 @@
         border-left: 100vw solid transparent;
        
 
-//position: relative;
 
-/*
-&::after {
-    content: url("../../shared/assets/zero.png");
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    height: 400px;
-    max-width: 80%;
- //   transform: rotate(5deg) translateY(-20px);
- transform: translate(100%, 0%) rotate(5deg); // Смещаем по диагонали и вращаем
-}
- */
     }
 &__zero {
     align-self: flex-end;
@@ -86,104 +90,5 @@
     transform: translateY(206px) rotate(5deg);
 }
 }
- 
-/*
-.welcome {
-    min-height: 967px;
-    position: relative;
-    overflow: hidden;
-
-
-
-    @include default {
-        display: flex;
-
-        flex-direction: column;
-
-    }
-&__entry {
-    display: flex;
-}
-    &__content {
-        margin-top: 69px;
-
-    }
-
-    &__title {
-        font-weight: 700;
-        font-size: 64px;
-        color: $white;
-        font-family: "Nunito", sans-serif;
-        max-width: 618px;
-        margin-bottom: 34px;
-
-        @include default {
-            text-align: center;
-        }
-    }
-
-    &__preview {
-
-        margin-left: 61px;
-
-        @include default {
-            margin-left: 0;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-        }
-
-    }
-
-    &__inner {
-        padding: 60px 0px 22px 37px;
-        max-width: 1379px;
-
-        @include default {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            padding: 43px 19px 0px 19px;
-        }
-
-
-    }
-
-    &__zero {
-        height: auto;
-        width: 50%;
-      align-self: flex-end;
-     justify-self: flex-end;
-       transform: translateY(256px) rotate(-3deg);
-
- 
-    }
-
-    &__background {
-
-        background-color: $red;
-display: flex;
-flex-direction: column;
-
-
-
-    }
-
-    &__triangle {
-
-
-        top: 0;
-        right: 0;
-        width: 0;
-        height: 0;
-        border-top: 254px solid $red;
-        border-left: 100vw solid transparent;
-
-
-    }
-
-
-
-}
-
+  
 */
