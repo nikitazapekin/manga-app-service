@@ -19,6 +19,10 @@
     padding: 0 10px;
     column-gap: 96px;
     width: max-content;
+
+    @include default {
+        column-gap: 36px;
+    }
 }
 
 .swiperItem {
