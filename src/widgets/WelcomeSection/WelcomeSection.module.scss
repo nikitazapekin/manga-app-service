@@ -51,7 +51,13 @@
 
     }
 
-    &__zero {}
+    &__zero { 
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        transform: rotate(-3deg) translateY(18px);
+        width: 35%;
+    }
 
     &__background {
 
@@ -69,11 +75,11 @@
         border-top: 254px solid $red;
         border-left: 100vw solid transparent;
 
-        &::before {
+    /*    &::before {
             content: url("../../shared/assets/zero.png");
             position: absolute;
             right: 0;
             bottom: 0;
-        }
+        } */
     }
 }
