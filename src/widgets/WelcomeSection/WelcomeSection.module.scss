@@ -21,12 +21,14 @@
 
 .welcome {
     &__inner {
+        min-height: 1000px;
         background-color: $red;
         display: flex;
         flex-direction: column;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 200px) );
         padding-left: 62px;
         row-gap: 40px;
+        position: relative;
   /*    padding-left: 62px;
       display: flex;
       justify-content: space-between; */
@@ -39,10 +41,21 @@
         font-family: "Nunito", sans-serif;
         max-width: 618px;
         margin-bottom: 34px;
+        margin-top: 50px;
 
     }
     &__zero {
-        align-self: flex-end;
+        position: absolute;
+        right: 0 ;
+      bottom: 0;
+     // align-self: flex-end;
+   //  width: 500px;
+       width: 40%;
+        height: auto;
+      //  display: grid;
+      //  grid-template-columns: minmax(600px, 200px);
+
+    //    transform: translateY(50px);
     }
 }
 /*
