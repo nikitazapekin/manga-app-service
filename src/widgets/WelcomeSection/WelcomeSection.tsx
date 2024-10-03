@@ -36,7 +36,7 @@ const WelcomeSection = () => {
                         на мангалиб
                     </h1>
                     <button className={styles.btn}>
-                        Исследовать
+                        Исследовать eb
                     </button>
                     <WelcomeSliderSwiper items={elems} />
                     <Image className={styles.welcome__zero} src={Zero} alt="Zero one" />
