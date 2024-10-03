@@ -1,10 +1,10 @@
 import localFont from "next/font/local";
-import "../app/theme/global";
-import "../app/theme/normalize";
+//import "../app/theme/global";
+//import "../app/theme/normalize";
 import { Provider } from "react-redux";
 import store from "@/pages/store/store";
 import { metadata } from "./metadata"; 
-
+/*
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -15,7 +15,7 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
-
+*/
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body>
         {children}
       </body>
     </html>
