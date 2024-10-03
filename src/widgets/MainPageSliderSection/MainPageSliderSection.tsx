@@ -1,7 +1,7 @@
 import React from 'react';
-import SliderCard from "@/shared/ui/SliderCard/SliderCard";
+//import SliderCard from "@/shared/ui/SliderCard/SliderCard";
 import styles from "./MainPageSliderSection.module.scss";
-import ScrollSlider from "@/entities/SliderCarousel/SliderCarousel";
+//import ScrollSlider from "@/entities/SliderCarousel/SliderCarousel";
 import Element from "@/shared/assets/element.png";
 import Swiper from '@/entities/Swiper/Swiper';
 

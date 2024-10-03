@@ -4,12 +4,12 @@ import "../app/theme/normalize.scss"
 import Header from "@/widgets/Header/Header";
 import styles from "../app/theme/wrappers.module.scss"
 import WelcomeSection from "@/widgets/WelcomeSection/WelcomeSection";
-import MainPageSliderSection from "@/widgets/MainPageSliderSection/MainPageSliderSection";
-import AuthModal from "@/widgets/AuthModal/AuthModal";
+//import MainPageSliderSection from "@/widgets/MainPageSliderSection/MainPageSliderSection";
+//import AuthModal from "@/widgets/AuthModal/AuthModal";
 import { setIsOpen } from "@/widgets/AuthModal/AuthModal.slice";
 import { useDispatch } from "react-redux";
-import WelcomeFindSection from "@/widgets/WelcomeFindSection/WelcomeFindSection";
-import Footer from "@/widgets/Footer/Footer";
+//import WelcomeFindSection from "@/widgets/WelcomeFindSection/WelcomeFindSection";
+//import Footer from "@/widgets/Footer/Footer";
  
 
 export default function Home() {
@@ -38,7 +38,10 @@ export default function Home() {
 
           */}
         </div>
+    {/*
         <Footer />
+    */}
+    
       </div>
     </>
   );

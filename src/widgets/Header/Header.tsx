@@ -3,9 +3,9 @@ import styles from "./Header.module.scss"
 import Logo from "../../shared/assets/logo.svg"
 import HeaderBtn from "@/shared/ui/HeaderBtn/HeaderBtn";
 import HeaderInput from "@/features/HeaderInput/HeaderInput";
-import ThemeBtn from "@/features/ThemeBtn/ThemeBtn";
+import ThemeBtn from "@/shared/ui/ThemeBtn/ThemeBtn";
 import { useSelector } from "react-redux";
-import { isDarkTheme } from "@/features/ThemeBtn/ThemeBtn.selector";
+import { isDarkTheme } from "@/shared/ui/ThemeBtn/ThemeBtn.selector";
 interface HeaderProps {
     handleOpenModal: () => void
 }

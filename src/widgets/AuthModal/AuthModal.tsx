@@ -7,7 +7,7 @@ import Vk from "@/shared/assets/social-networks/vk.png"
 import Google from "@/shared/assets/social-networks/google.png"
 import { useSelector } from "react-redux"
 import { AuthModalSelector } from "./AuthModal.selector"
-import { setIsOpen } from "./AuthModal.slice"
+//import { setIsOpen } from "./AuthModal.slice"
 interface AuthModalProps {
     handleOpenModal: () => void
 }

@@ -1,8 +1,8 @@
 
-import SliderCarouselHeader from "@/entities/SliderCarouselHeader/SliderCarouselHeader";
+//import SliderCarouselHeader from "@/entities/SliderCarouselHeader/SliderCarouselHeader";
 import styles from "./WelcomeSection.module.scss"
 import Zero from "@/shared/assets/zero.png"
-import ResearchBtn from "@/shared/ui/ResearchBtn/ResearchBtn";
+//import ResearchBtn from "@/shared/ui/ResearchBtn/ResearchBtn";
 import WelcomeSliderSwiper from "@/entities/WelcomeSliderSwiper/WelcomeSliderSwiper";
 
 import Element from "@/shared/assets/element.png"

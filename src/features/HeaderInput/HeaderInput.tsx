@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "./HeaderInput.module.scss"
 import Icon from "@/shared/assets/search.png"
 import { useSelector } from "react-redux";
-import { isDarkTheme } from "../ThemeBtn/ThemeBtn.selector";
+import { isDarkTheme } from "../../shared/ui/ThemeBtn/ThemeBtn.selector";
 const HeaderInput = () => {
 
     const isDark = useSelector(isDarkTheme)

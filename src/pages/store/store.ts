@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import ThemeSlice from '@/features/ThemeBtn/slice/ThemeSlice';
+import ThemeSlice from '@/shared/ui/ThemeBtn/slice/ThemeSlice';
 import AuthModalSlice from '@/widgets/AuthModal/AuthModal.slice';
 const store = configureStore({
   reducer: {

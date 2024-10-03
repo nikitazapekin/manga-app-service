@@ -1,5 +1,5 @@
 import styles from "./ThemeBtn.module.scss"
-import useTheme from "../hooks/useTheme";
+ 
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { isDarkTheme } from "./ThemeBtn.selector";
