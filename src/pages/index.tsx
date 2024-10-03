@@ -1,4 +1,12 @@
+const Home = () => {
+  return ( <div>
+    Home
+  </div> );
+}
+ 
+export default Home;
 
+/*
 import "../app/theme/global.scss"
 import "../app/theme/normalize.scss"
 import Header from "@/widgets/Header/Header";
@@ -26,7 +34,15 @@ export default function Home() {
         <WelcomeSection />
 
       
-            {/*  
+        </div>
+    
+      </div>
+    </>
+  );
+}
+*/
+
+            /*  
           <MainPageSliderSection title={"Специально для тебя"}  scale={1} />
           <MainPageSliderSection title={"Наши новинки"}  scale={-1} />
 
@@ -36,15 +52,8 @@ export default function Home() {
             handleOpenModal={handleOpenModal}
             /> 
 
-          */}
-        </div>
-    {/*
+          */
+
+    /*
         <Footer />
-    */}
-    
-      </div>
-    </>
-  );
-}
-
-
+    */
