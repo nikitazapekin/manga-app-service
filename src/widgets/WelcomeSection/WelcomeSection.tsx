@@ -29,29 +29,7 @@ const WelcomeSection = () => {
     return (
         <section className={styles.welcome}>
             <div className={styles.welcome__inner}>
-
-                <h1 className={styles.welcome__title}>
-                    Добро пожаловать
-                    на мангалиб
-                </h1>
-                <button className={styles.btn}>
-                    Исследовать
-                </button>
-                <WelcomeSliderSwiper items={elems} />
-                <Image className={styles.welcome__zero} src={Zero} alt="Zero one" />
-            </div>
-        </section>
-    );
-}
-
-export default WelcomeSection;
-/*
-const WelcomeSection = () => {
-    return (
-        <section className={styles.welcome}>
-            <div className={styles.welcome__inner}>
-
-                <div className={styles.welcome__content}>
+             
 
                     <h1 className={styles.welcome__title}>
                         Добро пожаловать
@@ -61,22 +39,11 @@ const WelcomeSection = () => {
                         Исследовать
                     </button>
                     <WelcomeSliderSwiper items={elems} />
+                    <Image className={styles.welcome__zero} src={Zero} alt="Zero one" />
                 </div>
-
-
-                <Image className={styles.welcome__zero} src={Zero} alt="Zero one" />
-            </div>
-
-            <div className={styles.welcome__triangle}>
-
-            </div>
-
-
-
-       
-        </section>);
+           
+        </section>
+    );
 }
 
 export default WelcomeSection; 
-
-*/

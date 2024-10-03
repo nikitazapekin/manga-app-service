@@ -93,7 +93,7 @@ const WelcomeSliderSwiper: React.FC<SwiperProps> = ({ items }: SwiperProps) => {
                 className={`${styles.swiper__btn} ${styles.swiper__right}`}
                 onClick={scrollRightHandler}
             >
-                <Image style={{ transform: "scale(-1)" }} src={Arrow} alt="arrow" />
+                <Image style={{ transform: "scale(-1)" }} src={Arrow} alt="arrow"  className={styles.swiper__card} />
             </div>
         </div>
     );

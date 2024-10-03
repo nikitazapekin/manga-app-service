@@ -7,8 +7,13 @@
     overflow-x: hidden;
     border-radius: 10px;
     display: flex;
-
-
+    
+    @include tablets {
+        max-width: 400px;
+    }
+@include mobiles {
+    max-width: 300px;
+}
     &::-webkit-scrollbar {
         display: none;
     }
@@ -22,6 +27,9 @@
 
     @include default {
         column-gap: 36px;
+    }
+    @include mobiles {
+       column-gap: 10px; 
     }
 }
 
@@ -56,7 +64,12 @@
     display: flex;
     align-items: center;
     column-gap: 18px;
+padding: 0 10px;
 
+@include smallMobiles {
+    column-gap: 10px; 
+
+ }
     &__btn {
         width: 42px;
         height: 42px;
@@ -69,8 +82,17 @@
 
 
     }
+&__card {
+ //   display: none;
 }
+}
+.swiperItem__image {
+    @include smallMobiles {
+    //    display: none;
+        width: 107px;
 
+}
+}
 /*
 .swiperRootContainer {
     width: 900px;
